@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body{
+        background-color: black;
+    }
+.page{
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows:10% 6% auto auto  ;
+    grid-template-areas: "logo logo nav1 nav1 nav1 nav1 nav1 nav1 nav1 nav1"
+    "nav2 nav2 nav2 nav2 nav2 nav2 nav2 nav2 nav2 nav2 "
+    "cont cont cont cont cont cont cont cont side side"
+    "foot foot foot foot foot foot foot foot foot foot";
+    
+}
+.navbar1{
+    grid-area: nav1;
+    margin-top: 10px;
+}
+.navbar1 ul{
+    align-items: center;
+display: flex;
+justify-content: space-evenly;
+}
+.navbar1 li{
+    list-style-type: none;
+    font-size: 20px;
+    margin-top: 5px;
+
+}
+.navbar1 a{
+    text-decoration: none;
+    color: white;
+    background-color:#4a0825;
+    padding: 10px 20px 10px 20px;
+    border-radius: 40px;
+
+
+}
+.navbar1 a:hover{
+    background-color:#2F4858;
+}
+.logo{
+    grid-area: logo;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+.navbar2{
+    grid-area: nav2;
+ 
+
+
+}
+.navbar2 ul{
+    display: flex;
+   background-color: #4C2C2F;
+           justify-content: space-evenly;
+
+}
+.navbar2 li{
+    list-style-type: none;
+    font-size: 30px;
+
+
+}
+.navbar2 a{
+    text-decoration: none;
+    color: white;
+
+}
+.navbar2 a:hover{
+    background-color: #2F4858;
+
+}
+aside{
+    grid-area: side;
+    background-color: #9c3a89;
+    color: white;
+
+}
+.content{
+    grid-area: cont;
+    color: white;
+    background-color: #200116;
+}
+footer{
+    grid-area: foot;
+    background-color: #4C2C2F;
+}
